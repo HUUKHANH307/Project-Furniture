@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  background-color: #F3F3F3;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  padding: 10px 45px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 600;
+  border: 1px solid;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .header-logo img {
+  width: 100%;
+}
+header .header-content .header-search {
+  border: 2px solid #F2F2F2;
+  border-radius: 40px;
+  height: 50px;
+  overflow: hidden;
+}
+header .header-content .header-search form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-content .header-search form input {
+  outline: none;
+  border: none;
+  width: 70%;
+  background-color: transparent;
+  padding-left: 20px;
+}
+@media (max-width: 1120px) {
+  header .header-content .header-search form input {
+    font-size: 13px;
+  }
+}
+header .header-content .header-search form button {
+  width: 20%;
+  background-color: #292929;
+  color: #fff;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+header .header-content .header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-content .header-right a {
+  margin: 0 16px;
+  color: #292929;
+  position: relative;
+}
+header .header-content .header-right a i {
+  color: #000;
+  font-size: 20px;
+}
+header .header-content .header-right a i:first-child {
+  margin-right: 8px;
+}
+header .header-content .header-right a span {
+  position: absolute;
+  top: -16px;
+  right: -10px;
+  background-color: #EA4335;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 8px;
+}
+header .header-content .icon-menu {
+  font-size: 24px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  height: 50px;
+}
+header .nav .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+header .nav .menu li {
+  padding: 10px 16px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+header .nav .menu li a {
+  color: #fff;
+}
+header .nav .menu li.active {
+  background-color: #B69B6D;
+}
+header .nav .menu li:hover {
+  border-bottom: 3px solid #EA4335;
+}
+
+.modal-1 .modal-dialog {
+  border-radius: 8px;
+}
+.modal-1 .modal-content {
+  overflow: hidden;
+  border-radius: 30px;
+}
+.modal-1 .modal-content .btn-close {
+  background-color: red;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.modal-1 .form-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.modal-1 .form-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-1 .form-container form .form-floating {
+  margin: 8px 0;
+  width: 100%;
+}
+.modal-1 .form-container form .form-floating .form-control {
+  width: 100%;
+}
+.modal-1 .form-container .network-wrapper {
+  display: flex;
+  margin: 40px 0;
+}
+.modal-1 .form-container .network-wrapper p {
+  font-size: 14px;
+}
+.modal-1 .form-container .network-wrapper .social-icons {
+  margin-left: 20px;
+}
+.modal-1 .form-container .network-wrapper .social-icons a {
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+.modal-1 .form-container {
+  color: transparent;
+}
+.modal-1 .form-container form .form-floating label {
+  color: transparent;
+}
+.modal-1 .form-container form .form-floating label:focus {
+  font-size: 10px;
+}
+.modal-1 .form-container.active {
+  color: #292929;
+}
+.modal-1 .form-container.active form .form-floating label {
+  color: #292929;
+}
+.modal-1 .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 180px 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  transition: all 0.5s;
+}
+.modal-1 .layer-content {
+  display: none;
+}
+.modal-1 .layer-content.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-1 .layer.active {
+  transform: translateX(-100%);
+  border-radius: 0 180px 150px 0;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

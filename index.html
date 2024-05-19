@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- ---------------------start header---------------------->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-logo col-2">
+          <img src="/assets/images/logo-brand.png" alt="">
+        </div>
+        <div class="header-search d-none d-lg-block col-4 col-xl-5">
+          <form action="">
+            <input type="text" placeholder="Nhập thông tin cần tìm tại đây...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          
+        </div>
+        <div class="header-right d-none d-lg-block col-4 col-xl-3">
+          <a href=""><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</a>
+          <a href=""><i class="fa-solid fa-cart-plus"></i><span>0</span></a>
+          <a href="" class="active"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="icon-menu d-lg-none"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+    
+    <nav class="nav d-none d-lg-block">
+      <div class="container">
+        <ul class="menu">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="">Phòng khách</a></li>
+          <li><a href="">Phòng ngủ</a></li>
+          <li><a href="">Phòng bếp & Phòng ăn</a></li>
+          <li><a href="">Phòng làm việc</a></li>
+          <li><a href="">Phụ kiện</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!------------------------end header-------------------- --->
+
+  <!-- ---------------------start slider-------------------- -->
+  
+  <!-- ---------------------end slider--------------------- --->
+
+  <!-- ---------------------start footer-------------------- -->
+  <!-- ---------------------end footer---------------------- -->
+
+  <!-- ------------start modal signin/ signup--------------- -->
+  <button data-bs-toggle="modal" data-bs-target=".modal-1">nút</button>
+  <div class="modal modal-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="btn-close"></div>
+        <div class="form-wrapper">
+          <div class="form-container active sign-in">
+            <form action="">
+              <h2>Đăng kí tài khoản</h2>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên tài khoản">
+                <label for="name">Tên tài khoản</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                <label for="password">Nhập mật khẩu</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <label for="re-password">Nhập lại mật  khẩu</label>
+              </div>
+              <div class="btn">Đăng kí</div>
+              <div class="network-wrapper">
+                <p>Hoặc đăng nhập bằng</p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-google"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="form-container sign-up">
+            <form action="">
+              <h2>Đăng nhập</h2>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên tài khoản">
+                <label for="name">Tên tài khoản</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                <label for="password">Nhập mật khẩu</label>
+              </div>
+              <div class="btn">Đăng nhập</div>
+              <div class="network-wrapper">
+                <p>Hoặc đăng nhập bằng</p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-google"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="layer">
+          <div class="layer-content active">
+            <h2>Chào mừng trở lại</h2>
+            <p>Nhập thông tin của bạn để có thể sử dụng các tính năng của chúng tôi</p>
+            <div class="btn">Đăng nhập</div>
+          </div>
+          <div class="layer-content">
+            <h2>Xin chào, bạn</h2>
+            <p>Hãy đăng kí tài khoản để sử dụng các tính năng của chúng tôi</p>
+            <div class="btn">Đăng kí</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- --------------end modal signin/ signup--------------- -->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
