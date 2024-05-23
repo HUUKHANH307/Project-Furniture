@@ -1,3 +1,20 @@
+$(document).ready(function(){
+  $('.slider').slick({
+    infinite:true,
+    autoplay:true,
+    autoplaySpeed:4000,
+    speed:2000,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+
+  })
+})
+
+
+
+
+
+
 // $(document).ready(function(){
 //     $('.btn').click(function(){
 //         $('h2').addClass('bg-primary')
@@ -36,3 +53,20 @@ $(document).ready(function(){
   })
 
 })
+
+
+
+var banTra=[
+  {
+    img:'link ảnh',
+    name:'ten sp',
+    price:'giá',
+    desc:'mô tả'
+  },
+  {
+    img:'link ảnh',
+    name:'ten sp',
+    price:'giá',
+    desc:'mô tả'
+  }
+]

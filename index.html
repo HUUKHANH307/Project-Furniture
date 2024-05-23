@@ -17,22 +17,86 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="header-logo col-2">
+        <a href="index.html" class="header-logo col-3 col-md-2">
           <img src="/assets/images/logo-brand.png" alt="">
-        </div>
-        <div class="header-search d-none d-lg-block col-4 col-xl-5">
+        </a>
+        <div class="header-search col-12 col-md-5">
           <form action="">
             <input type="text" placeholder="Nhập thông tin cần tìm tại đây...">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           
         </div>
-        <div class="header-right d-none d-lg-block col-4 col-xl-3">
-          <a href=""><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</a>
-          <a href=""><i class="fa-solid fa-cart-plus"></i><span>0</span></a>
-          <a href="" class="active"><i class="fa-solid fa-user"></i></a>
+        <div class="header-right col-3 col-xl-4">
+          <div class="icon-menu icon-menu-mobile d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#nav-mobile"><i class="fa-solid fa-bars"></i></div>
+          <div class="icon-menu d-none d-lg-block had-user"><i class="fa-solid fa-user"></i></div>
+          <div class="icon-menu"><i class="fa-solid fa-cart-plus"></i><span>0</span></div>
+          <div class="icon-menu d-none d-lg-block"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</div>
         </div>
-        <div class="icon-menu d-lg-none"><i class="fa-solid fa-bars"></i></div>
+        <div id="nav-mobile" class="offcanvas offcanvas-end" >
+          <div class="offcanvas-header">
+            <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+            <span>Đăng kí / Đăng nhập</span>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="offcanvas-menu">
+              <li>
+                <a href="">Phòng khách</a>
+                <a class="menu-collapse" data-bs-toggle="collapse" href="#phongkhach"><i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <ul class="collapse" id="phongkhach">
+                <li><a href="">Bàn trà</a></li>
+                <li><a href="">Sofa</a></li>
+                <li><a href="">Kệ TV</a></li>
+                <li><a href="">Kệ tủ</a></li>
+                <li><a href="">Tủ trưng bày</a></li>
+              </ul>
+              <li>
+                <a href="">Phòng ngủ</a>
+                <a class="menu-collapse" data-bs-toggle="collapse" href="#phongngu"><i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <ul class="collapse" id="phongngu">
+                <li><a href="">Giường</a></li>
+                <li><a href="">Tủ đầu giường</a></li>
+                <li><a href="">Giá treo quần áo</a></li>
+                <li><a href="">Bàn trang điểm</a></li>
+                <li><a href="">Tủ quần áo</a></li>
+             </ul>
+              <li>
+                <a href="">Phòng bếp & Phòng ăn</a>
+                <a class="menu-collapse" data-bs-toggle="collapse" href="#phongbep"><i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <ul class="collapse" id="phongbep">
+                <li><a href="">Phụ kiện bếp</a></li>
+                <li><a href="">Phòng ăn</a></li>
+                <li><a href="">Kệ tủ bếp</a></li>
+              </ul>
+              <li>
+                <a href="">Phòng làm việc</a>
+                <a class="menu-collapse" data-bs-toggle="collapse" href="#phonglamviec"><i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <ul class="collapse" id="phonglamviec">
+                <li><a href="">Bàn làm việc</a></li>
+                <li><a href="">Ghế xoay</a></li>
+                <li><a href="">Tủ bàn làm việc</a></li>
+             </ul>
+              <li>
+                <a href="">Phụ kiện</a>
+                <a class="menu-collapse" data-bs-toggle="collapse" href="#phukien"><i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <ul class="collapse" id="phukien">
+                <li><a href="">Dụng cụ làm bếp</a></li>
+                <li><a href="">Sản phẩm dệt may</a></li>
+                <li><a href="">Sắp xếp nhà cửa</a></li>
+                <li><a href="">Đồ trang trí</a></li>
+                <li><a href="">Phòng tắm</a></li>
+             </ul>
+              <li>
+                <a href="">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -53,10 +117,106 @@
   <!------------------------end header-------------------- --->
 
   <!-- ---------------------start slider-------------------- -->
+  <div class="slider">
+    <div class="image"><img src="/assets/images/slider/slider-1.jpg" alt=""></div>
+    <div class="image"><img src="/assets/images/slider/slider-2.png" alt=""></div>
+    <div class="image"><img src="/assets/images/slider/slider-3.png" alt=""></div>
+  </div>
   
   <!-- ---------------------end slider--------------------- --->
+  
+  <!-- ---------------------start section-1--------------------- --->
+  <section class="section-element-support">
+    <div class="container">
+      <div class="list-item">
+        <div class="item col-12 col-md-4">
+          <div class="icon"><img src="/assets/images/support.png" alt=""></div>
+          <div class="box-content">
+            <h4>Tư vấn hỗ trợ 24/7</h4>
+            <p>Mọi thắc mắc đều được giải đáp nhiệt tình.</p>
+          </div>
+        </div>
+        <div class="item col-12 col-md-4">
+          <div class="icon"><img src="/assets/images/free-shipping.png" alt=""></div>
+          <div class="box-content">
+            <h4>Giao hàng trên toàn quốc</h4>
+            <p>Đơn hàng >2.000.000đ hoặc đăng kí tài khoản được giao hàng miễn phí.</p>
+          </div>
+        </div>
+        <div class="item col-12 col-md-4">
+          <div class="icon"><img src="/assets/images/money-return.png" alt=""></div>
+          <div class="box-content">
+            <h4>Đảm bảo hoàn tiền</h4>
+            <p>Không thích? Trả lại hoặc đổi hàng của bạn miễn phi trong vòng 30 ngày.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ---------------------end section-1--------------------- --->
 
   <!-- ---------------------start footer-------------------- -->
+  <footer>
+    <div class="container">
+      <div class="list-items">
+        <div class="item col">
+          <h4>THÔNG TIN LIÊN HỆ</h4>
+          <ul class="social-icons">
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          </ul>
+          <div class="box-content">
+            <p>CÔNG TY TNHH QUEENS GROUP VIỆT NAM</p>
+            <p>Số 3007, Đại lộ ABC, Khu B12, phường Bình Trị Đông, Quận Bình Tân, Thành Phố Hồ Chí Minh</p>
+          </div>
+          <div class="box-content">
+            <p>Giấy chứng nhận kinh doanh</p>
+             <p>Số 012345678910 do Sở kế hoạch và đầu tư Thành Phố Hồ Chí Minh cấp ngày 29/2/2024</p>
+          </div>
+        </div>
+        <div class="item col">
+          <h4>VỀ CHÚNG TÔI</h4>
+          <ul>
+            <li><a href="">Về Queens Group</a></li>
+            <li><a href="">Blog / Tin tức</a></li>
+            <li><a href="">Sản phẩm</a></li>
+          </ul>
+        </div>
+        <div class="item col">
+          <h4>DỊCH VỤ</h4>
+          <ul>
+            <li><a href="">Chính sách giao hàng & lắp đặt</a></li>
+            <li><a href="">Chính sách trả góp</a></li>
+            <li><a href="">Chính sách bảo vệ dữ liệu</a></li>
+            <li><a href="">Điều khoản & Điều kiện</a></li>
+            <li><a href="">Chính sách bảo hành</a></li>
+            <li><a href="">Chính sách đổi trả</a></li>
+          </ul>
+        </div>
+        <div class="item col">
+          <h4>ĐĂNG KÍ NHẬN TIN</h4>
+          <form action="">
+            <p>Đăng kí nhận tin để nhận được nhiều ưu đãi hấp dẫn</p>
+            <div class="input">
+              <input type="email" placeholder="Nhập email của bạn...">
+              <button type="submit">ĐĂNG KÍ</button>
+            </div>
+          </form>
+          <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+          <ul>
+            <li><img src="/assets/images/payment_1.png" alt=""></li>
+            <li><img src="/assets/images/payment_2.png" alt=""></li>
+            <li><img src="/assets/images/payment_3.png" alt=""></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- ---------------------end footer---------------------- -->
 
   <!-- ------------start modal signin/ signup--------------- -->

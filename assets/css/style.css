@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style: none;
 }
@@ -34,11 +38,19 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+}
+@media (max-width: 760px) {
+  header .header-content {
+    min-height: 80px;
+  }
 }
 header .header-content .header-logo img {
   width: 100%;
@@ -48,6 +60,12 @@ header .header-content .header-search {
   border-radius: 40px;
   height: 50px;
   overflow: hidden;
+}
+@media (max-width: 760px) {
+  header .header-content .header-search {
+    order: 3;
+    height: 42px;
+  }
 }
 header .header-content .header-search form {
   width: 100%;
@@ -76,24 +94,29 @@ header .header-content .header-search form button {
   border: none;
   outline: none;
 }
+header .header-content .header-search form button:hover {
+  color: #EA4335;
+}
 header .header-content .header-right {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
 }
-header .header-content .header-right a {
-  margin: 0 16px;
+header .header-content .header-right .icon-menu {
+  margin: 0 12px;
   color: #292929;
+  padding: 4px 8px;
   position: relative;
+  cursor: pointer;
 }
-header .header-content .header-right a i {
+header .header-content .header-right .icon-menu i {
   color: #000;
   font-size: 20px;
 }
-header .header-content .header-right a i:first-child {
+header .header-content .header-right .icon-menu i:first-child {
   margin-right: 8px;
 }
-header .header-content .header-right a span {
+header .header-content .header-right .icon-menu span {
   position: absolute;
   top: -16px;
   right: -10px;
@@ -103,8 +126,71 @@ header .header-content .header-right a span {
   border-radius: 50%;
   font-size: 8px;
 }
-header .header-content .icon-menu {
+header .header-content .header-right .icon-menu:hover {
+  color: #EA4335;
+  border-radius: 8px;
+}
+header .header-content .header-right .icon-menu:hover i {
+  color: #EA4335;
+}
+header .header-content .had-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #EC407A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
+  color: #fff;
+  border: none;
+}
+header .header-content #nav-mobile {
+  width: 320px;
+}
+header .header-content #nav-mobile .offcanvas-header .icon-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 1px solid #292929;
+}
+header .header-content #nav-mobile .offcanvas-header .icon-user i {
+  color: #292929;
+}
+header .header-content #nav-mobile .offcanvas-header span {
+  margin-left: 32px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header .header-content #nav-mobile .offcanvas-header span:hover {
+  color: #EA4335;
+}
+header .header-content #nav-mobile .offcanvas-body {
+  padding: 0;
+}
+header .header-content #nav-mobile .offcanvas-body .offcanvas-menu li {
+  border-bottom: 1px solid #66667A;
+  padding: 12px 0;
+  position: relative;
+}
+header .header-content #nav-mobile .offcanvas-body .offcanvas-menu li > a {
+  color: #292929;
+  padding: 12px 16px;
+}
+header .header-content #nav-mobile .offcanvas-body .offcanvas-menu li .menu-collapse {
+  position: absolute;
+  right: 30px;
+  top: 3px;
+}
+header .header-content #nav-mobile .offcanvas-body .offcanvas-menu li:hover {
+  background-color: #EA4335;
+}
+header .header-content #nav-mobile .offcanvas-body .offcanvas-menu li:hover a {
+  color: #fff;
 }
 header .nav {
   display: flex;
@@ -128,11 +214,145 @@ header .nav .menu li {
 header .nav .menu li a {
   color: #fff;
 }
+header .nav .menu li:hover {
+  border-bottom: 3px solid #EA4335;
+}
+header .nav .menu li:hover a {
+  color: #FCA120;
+}
 header .nav .menu li.active {
   background-color: #B69B6D;
 }
-header .nav .menu li:hover {
-  border-bottom: 3px solid #EA4335;
+
+.slider {
+  margin-top: 185px;
+  width: 100%;
+  max-height: 442px;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .slider {
+    margin-top: 165px;
+  }
+}
+@media (max-width: 992px) {
+  .slider {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 776px) {
+  .slider {
+    margin-top: 120px;
+  }
+}
+.slider .image {
+  height: 100%;
+}
+.slider .image img {
+  width: 100%;
+  object-fit: fill;
+  aspect-ratio: 1224/442;
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(16, 15, 15, 0.3);
+}
+.slider .slick-arrow i {
+  color: #fff;
+}
+.slider .slick-next {
+  right: 0;
+}
+.slider .slick-prev {
+  left: 0;
+}
+
+.section-element-support {
+  margin-top: 40px;
+}
+.section-element-support .list-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-element-support .list-item .item {
+  text-align: center;
+  padding: 8px;
+}
+@media (max-width: 768.999px) {
+  .section-element-support .list-item .item {
+    padding: 4px 36px;
+  }
+}
+.section-element-support .list-item .item .box-content {
+  padding-top: 12px;
+}
+
+footer {
+  background-color: #010103;
+}
+footer .list-items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+footer .list-items .item h4 {
+  color: #F3F3F3;
+  font-size: 20px;
+}
+footer .list-items .item .social-icons {
+  display: flex;
+  padding: 0;
+}
+footer .list-items .item .social-icons li {
+  padding: 8px;
+  margin-right: 20px;
+}
+footer .list-items .item .social-icons li i {
+  font-size: 20px;
+  color: #666666;
+}
+footer .list-items .item .box-content p {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 8px;
+  padding-right: 28px;
+}
+footer .list-items .item .box-content p:first-child {
+  font-weight: 800;
+  font-size: 14px;
+  margin: 2px;
+}
+footer .list-items .item ul li a {
+  color: #666666;
+  padding: 10px 0;
+  margin-bottom: 12px;
+}
+footer .list-items .item form p {
+  color: #666666;
+}
+footer .list-items .item form .input {
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: space-between;
+}
+footer .list-items .item form .input input {
+  border: none;
+  outline: none;
+  background-color: #F3F3F3;
+  padding: 12px 4px;
+}
+footer .list-items .item form .input button {
+  border: none;
+  outline: none;
+  background-color: #FCA120;
+  padding: 12px 4px;
 }
 
 .modal-1 .modal-dialog {
