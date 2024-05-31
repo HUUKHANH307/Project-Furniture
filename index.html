@@ -29,70 +29,120 @@
         </div>
         <div class="header-right col-3 col-xl-4">
           <div class="icon-menu icon-menu-mobile d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#nav-mobile"><i class="fa-solid fa-bars"></i></div>
-          <div class="icon-menu d-none d-lg-block had-user"><i class="fa-solid fa-user"></i></div>
-          <div class="icon-menu"><i class="fa-solid fa-cart-plus"></i><span>0</span></div>
+          <div class="icon-menu d-none d-lg-block user"><i class="fa-solid fa-user"></i></div>
+          <div class="icon-menu"><i class="fa-solid fa-cart-plus" data-bs-toggle="modal" data-bs-target="#modal-1"></i><span>0</span></div>
           <div class="icon-menu d-none d-lg-block"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</div>
+        </div>
+        <div id="shopping-cart" class="offcanvas offcanvas-end">
+          <div class="offcanvas-header">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Giỏ hàng của tôi</span>
+          </div>
+          <div class="offcanvas-body">
+            <div class="list-item">
+              <div class="item">
+                <img src="/assets/images/sale-1.jpg" alt="">
+                <div class="box-content">
+                  <p class="name-item">bàn ghê mở rộng</p>
+                  <div class="box-price">
+                    <div class="btn down">-</div>
+                    <input type="text" value="1">
+                    <div class="btn up">+</div>
+                    <p>Đơn giá: <span class="price">23000</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/sale-1.jpg" alt="">
+                <div class="box-content">
+                  <p class="name-item">bàn</p>
+                  <div class="box-price">
+                    <div class="btn down">-</div>
+                    <input type="text" value="1">
+                    <div class="btn up">+</div>
+                    <p>Đơn giá: <span class="price">23000</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/sale-1.jpg" alt="">
+                <div class="box-content">
+                  <p class="name-item">rộng</p>
+                  <div class="box-price">
+                    <div class="btn down">-</div>
+                    <input type="text" value="1">
+                    <div class="btn up">+</div>
+                    <p>Đơn giá: <span class="price">23000</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-bottom">
+              <p>Tổng tiền: <span class="sum-price"></span> </p>
+              <div class="btn" type="submit">Thanh toán</div>
+            </div>
+          </div>
         </div>
         <div id="nav-mobile" class="offcanvas offcanvas-end" >
           <div class="offcanvas-header">
-            <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+            <div class="icon-user user"><i class="fa-solid fa-user"></i></div>
             <span>Đăng kí / Đăng nhập</span>
           </div>
           <div class="offcanvas-body">
             <ul class="offcanvas-menu">
               <li>
-                <a href="">Phòng khách</a>
+                <a href="#">Phòng khách</a>
                 <a class="menu-collapse" data-bs-toggle="collapse" href="#phongkhach"><i class="fa-solid fa-angle-right"></i></a>
               </li>
               <ul class="collapse" id="phongkhach">
-                <li><a href="">Bàn trà</a></li>
-                <li><a href="">Sofa</a></li>
-                <li><a href="">Kệ TV</a></li>
-                <li><a href="">Kệ tủ</a></li>
-                <li><a href="">Tủ trưng bày</a></li>
+                <li><a href="#">Bàn trà</a></li>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Kệ TV</a></li>
+                <li><a href="#">Kệ tủ</a></li>
+                <li><a href="#">Tủ trưng bày</a></li>
               </ul>
               <li>
-                <a href="">Phòng ngủ</a>
+                <a href="#">Phòng ngủ</a>
                 <a class="menu-collapse" data-bs-toggle="collapse" href="#phongngu"><i class="fa-solid fa-angle-right"></i></a>
               </li>
               <ul class="collapse" id="phongngu">
-                <li><a href="">Giường</a></li>
-                <li><a href="">Tủ đầu giường</a></li>
-                <li><a href="">Giá treo quần áo</a></li>
-                <li><a href="">Bàn trang điểm</a></li>
-                <li><a href="">Tủ quần áo</a></li>
+                <li><a href="#">Giường</a></li>
+                <li><a href="#">Tủ đầu giường</a></li>
+                <li><a href="#">Giá treo quần áo</a></li>
+                <li><a href="#">Bàn trang điểm</a></li>
+                <li><a href="#">Tủ quần áo</a></li>
              </ul>
               <li>
-                <a href="">Phòng bếp & Phòng ăn</a>
+                <a href="#">Phòng bếp & Phòng ăn</a>
                 <a class="menu-collapse" data-bs-toggle="collapse" href="#phongbep"><i class="fa-solid fa-angle-right"></i></a>
               </li>
               <ul class="collapse" id="phongbep">
-                <li><a href="">Phụ kiện bếp</a></li>
-                <li><a href="">Phòng ăn</a></li>
-                <li><a href="">Kệ tủ bếp</a></li>
+                <li><a href="#">Phụ kiện bếp</a></li>
+                <li><a href="#">Phòng ăn</a></li>
+                <li><a href="#">Kệ tủ bếp</a></li>
               </ul>
               <li>
-                <a href="">Phòng làm việc</a>
+                <a href="#">Phòng làm việc</a>
                 <a class="menu-collapse" data-bs-toggle="collapse" href="#phonglamviec"><i class="fa-solid fa-angle-right"></i></a>
               </li>
               <ul class="collapse" id="phonglamviec">
-                <li><a href="">Bàn làm việc</a></li>
-                <li><a href="">Ghế xoay</a></li>
-                <li><a href="">Tủ bàn làm việc</a></li>
+                <li><a href="#">Bàn làm việc</a></li>
+                <li><a href="#">Ghế xoay</a></li>
+                <li><a href="#">Tủ bàn làm việc</a></li>
              </ul>
               <li>
-                <a href="">Phụ kiện</a>
+                <a href="#">Phụ kiện</a>
                 <a class="menu-collapse" data-bs-toggle="collapse" href="#phukien"><i class="fa-solid fa-angle-right"></i></a>
               </li>
               <ul class="collapse" id="phukien">
-                <li><a href="">Dụng cụ làm bếp</a></li>
-                <li><a href="">Sản phẩm dệt may</a></li>
-                <li><a href="">Sắp xếp nhà cửa</a></li>
-                <li><a href="">Đồ trang trí</a></li>
-                <li><a href="">Phòng tắm</a></li>
+                <li><a href="#">Dụng cụ làm bếp</a></li>
+                <li><a href="#">Sản phẩm dệt may</a></li>
+                <li><a href="#">Sắp xếp nhà cửa</a></li>
+                <li><a href="#">Đồ trang trí</a></li>
+                <li><a href="#">Phòng tắm</a></li>
              </ul>
               <li>
-                <a href="">Blog</a>
+                <a href="#">Blog</a>
               </li>
             </ul>
           </div>
@@ -103,13 +153,54 @@
     <nav class="nav d-none d-lg-block">
       <div class="container">
         <ul class="menu">
-          <li class="active"><a href="">Home</a></li>
-          <li><a href="">Phòng khách</a></li>
-          <li><a href="">Phòng ngủ</a></li>
-          <li><a href="">Phòng bếp & Phòng ăn</a></li>
-          <li><a href="">Phòng làm việc</a></li>
-          <li><a href="">Phụ kiện</a></li>
-          <li><a href="">Blog</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <a href="phongkhach.html">Phòng khách</a>
+            <ul class="subnav">
+              <li><a href="#">Bàn trà</a></li>
+              <li><a href="#">Sofa</a></li>
+              <li><a href="#">Kệ tủ</a></li>
+              <li><a href="#">Kệ TV</a></li>
+              <li><a href="#">Tủ trưng bày</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="phongngu.html">Phòng ngủ</a>
+            <ul class="subnav">
+              <li><a href="#">Giường</a></li>
+              <li><a href="#">Tủ đầu giường</a></li>
+              <li><a href="#">Giá treo quần áo</a></li>
+              <li><a href="#">Bàn trang điểm</a></li>
+              <li><a href="#">Tủ quần áo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="phongbep.html">Phòng bếp & Phòng ăn</a>
+            <ul class="subnav">
+              <li><a href="#">Phụ kiện bếp</a></li>
+              <li><a href="#">Phòng ăn</a></li>
+              <li><a href="#">Kệ tủ bếp</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="phonglamviec.html">Phòng làm việc</a>
+            <ul class="subnav">
+              <li><a href="#">Bàn làm việc</a></li>
+              <li><a href="#">Ghế xoay</a></li>
+              <li><a href="#">Tủ bàn làm việc</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="phukien.html">Phụ kiện</a>
+            <ul class="subnav">
+              <li><a href="#">Dụng cụ làm bếp</a></li>
+              <li><a href="#">Sản phẩm dệt may</a></li>
+              <li><a href="#">Sắp xếp nhà cửa</a></li>
+              <li><a href="#">Đồ trang trí</a></li>
+              <li><a href="#">Phòng tắm</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </div>
     </nav>
@@ -156,18 +247,120 @@
     </div>
   </section>
   <!-- ---------------------end section-1--------------------- --->
+  <!-- ---------------------start section-2--------------------- --->
+  <section>
+    <div class="container-lg">
+      <div class="flash-sale">
+        <div class="sale-head">
+          <div class="head-left">
+            <img src="/assets/images/flashsale_icon.png" alt="">
+            <h2>GIỜ VÀNG DEAL SỐC</h2>
+          </div>
+          <div class="head-right">
+            <div class="label-countdown">
+              <p>Nhanh lên nào !</p>
+              <span>Sự kiện sắp diễn ra</span>
+            </div>
+            <div class="time-countdown">
+              <div class="item days"><p></p><span>ngày</span></div>
+              <div class="item hours"><p></p><span>giờ</span></div>
+              <div class="item minutes"><p></p><span>phút</span></div>
+              <div class="item seconds"><p></p><span>giây</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="sale-nav">
+          <div class="item col-4">
+            <p>24/08 - 25/08</p>
+            <span>Đang diễn ra</span>
+          </div>
+          <div class="item col-4">
+            <p>26/08 - 27/08</p>
+            <span>Sắp diễn ra</span>
+          </div>
+          <div class="item col-4">
+            <p>28/08 - 29/08</p>
+            <span>Sắp diễn ra</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="item col-3">
+            <div class="image">
+              <img src="/assets/images/sale-1.jpg" alt="">
+            </div>
+            <div class="title">Ghế ăn</div>
+            <h4>DENMARK - Ghế ăn</h4>
+            <div class="box-price">
+              <div class="price-sale">2.799.000</div>
+              <span class="price-basic">3.499.000</span>
+            </div>
+            <div class="list-button">
+              <button data-bs-toggle="modal" data-bs-target="#modal-1">Mua ngay</button>
+              <div class="btn-cart" data-bs-toggle="modal" data-bs-target="#modal-1"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </div>
+          <div class="item col-3">
+            <div class="image">
+              <img src="/assets/images/sale-2.jpg" alt="">
+            </div>
+            <div class="title">Bàn ăn mở rộng</div>
+            <h4>HUNGARY - Bàn ăn mở rộng</h4>
+            <div class="box-price">
+              <div class="price-sale">6.399.200</div>
+              <span class="price-basic">7.999.000</span>
+            </div>
+            <div class="list-button">
+              <button data-bs-toggle="modal" data-bs-target="#modal-1">Mua ngay</button>
+              <div class="btn-cart" data-bs-toggle="modal" data-bs-target="#modal-1"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </div>
+          <div class="item col-3">
+            <div class="image">
+              <img src="/assets/images/sale-3.jpg" alt="">
+            </div>
+            <div class="title">Ghế ăn</div>
+            <h4>BELGIUM - Ghế ăn</h4>
+            <div class="box-price">
+              <div class="price-sale">1.999.200</div>
+              <span class="price-basic">2.499.000</span>
+            </div>
+            <div class="list-button">
+              <button data-bs-toggle="modal" data-bs-target="#modal-1">Mua ngay</button>
+              <div class="btn-cart" data-bs-toggle="modal" data-bs-target="#modal-1"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </div>
+          <div class="item col-3">
+            <div class="image">
+              <img src="/assets/images/sale-4.jpg" alt="">
+            </div>
+            <div class="title">Bàn mở rộng</div>
+            <h4>SWITZERLAND - Bàn mở rộng</h4>
+            <div class="box-price">
+              <div class="price-sale">7.199.200</div>
+              <span class="price-basic">8.999.000</span>
+            </div>
+            <div class="list-button">
+              <button data-bs-toggle="modal" data-bs-target="#modal-1">Mua ngay</button>
+              <div class="btn-cart" data-bs-toggle="modal" data-bs-target="#modal-1"><i class="fa-solid fa-cart-plus"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ---------------------end section-2--------------------- --->
 
   <!-- ---------------------start footer-------------------- -->
   <footer>
     <div class="container">
       <div class="list-items">
-        <div class="item col">
+        <div class="item col-12 col-md-6 col-lg-3">
           <h4>THÔNG TIN LIÊN HỆ</h4>
           <ul class="social-icons">
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
           </ul>
           <div class="box-content">
             <p>CÔNG TY TNHH QUEENS GROUP VIỆT NAM</p>
@@ -178,26 +371,27 @@
              <p>Số 012345678910 do Sở kế hoạch và đầu tư Thành Phố Hồ Chí Minh cấp ngày 29/2/2024</p>
           </div>
         </div>
-        <div class="item col">
+        <div class="item col-6 col-lg-2">
           <h4>VỀ CHÚNG TÔI</h4>
           <ul>
-            <li><a href="">Về Queens Group</a></li>
-            <li><a href="">Blog / Tin tức</a></li>
-            <li><a href="">Sản phẩm</a></li>
+            <li><a href="#">Về Queens Group</a></li>
+            <li><a href="#">Blog / Tin tức</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Lab thực hành</a></li>
           </ul>
         </div>
-        <div class="item col">
+        <div class="item col-6 col-lg-3">
           <h4>DỊCH VỤ</h4>
           <ul>
-            <li><a href="">Chính sách giao hàng & lắp đặt</a></li>
-            <li><a href="">Chính sách trả góp</a></li>
-            <li><a href="">Chính sách bảo vệ dữ liệu</a></li>
-            <li><a href="">Điều khoản & Điều kiện</a></li>
-            <li><a href="">Chính sách bảo hành</a></li>
-            <li><a href="">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách giao hàng & lắp đặt</a></li>
+            <li><a href="#">Chính sách trả góp</a></li>
+            <li><a href="#">Chính sách bảo vệ dữ liệu</a></li>
+            <li><a href="#">Điều khoản & Điều kiện</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
           </ul>
         </div>
-        <div class="item col">
+        <div class="item col-12 col-md-6 col-lg-4">
           <h4>ĐĂNG KÍ NHẬN TIN</h4>
           <form action="">
             <p>Đăng kí nhận tin để nhận được nhiều ưu đãi hấp dẫn</p>
@@ -207,7 +401,7 @@
             </div>
           </form>
           <h4>PHƯƠNG THỨC THANH TOÁN</h4>
-          <ul>
+          <ul class="payment">
             <li><img src="/assets/images/payment_1.png" alt=""></li>
             <li><img src="/assets/images/payment_2.png" alt=""></li>
             <li><img src="/assets/images/payment_3.png" alt=""></li>
@@ -216,15 +410,18 @@
         </div>
       </div>
     </div>
+    <div class="copy-right">
+      Copyright <a href="#">Nguyen Phan Huu Khanh</a> 2024. All Rights Reserved
+      <p>NGUYỄN PHAN HỮU KHANH_DH52200859_D22_TH02_NHÓM 21_T5_CA1</p>
+    </div>
   </footer>
   <!-- ---------------------end footer---------------------- -->
 
   <!-- ------------start modal signin/ signup--------------- -->
-  <button data-bs-toggle="modal" data-bs-target=".modal-1">nút</button>
-  <div class="modal modal-1">
+  <div class="modal" id="modal-1">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="btn-close"></div>
+        <div class="btn-close" data-bs-dismiss="modal"></div>
         <div class="form-wrapper">
           <div class="form-container active sign-in">
             <form action="">
@@ -238,24 +435,25 @@
                 <label for="email">Email</label>
               </div>
               <div class="form-floating">
-                <input type="text" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
                 <label for="password">Nhập mật khẩu</label>
               </div>
               <div class="form-floating">
-                <input type="text" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
                 <label for="re-password">Nhập lại mật  khẩu</label>
               </div>
               <div class="btn">Đăng kí</div>
+              <p class="pt-2">Bạn đã có tài khoản ? <a class="ps-2" href="">Đăng nhập</a></p>
               <div class="network-wrapper">
                 <p>Hoặc đăng nhập bằng</p>
                 <div class="social-icons">
-                  <a href=""><i class="fa-brands fa-google"></i></a>
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-google"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
               </div>
             </form>
           </div>
-          <div class="form-container sign-up">
+          <div class="form-container sign-up d-none d-lg-block">
             <form action="">
               <h2>Đăng nhập</h2>
               <div class="form-floating">
@@ -271,17 +469,18 @@
                 <label for="password">Nhập mật khẩu</label>
               </div>
               <div class="btn">Đăng nhập</div>
+              <p class="pt-2">Bạn chưa có tài khoản ? <a class="ps-2" href="">Đăng ký</a></p>
               <div class="network-wrapper">
                 <p>Hoặc đăng nhập bằng</p>
                 <div class="social-icons">
-                  <a href=""><i class="fa-brands fa-google"></i></a>
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-google"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="layer">
+        <div class="layer d-none d-lg-flex">
           <div class="layer-content active">
             <h2>Chào mừng trở lại</h2>
             <p>Nhập thông tin của bạn để có thể sử dụng các tính năng của chúng tôi</p>
